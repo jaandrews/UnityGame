@@ -11,6 +11,7 @@ public enum DamageType{
 	Air,
 	Earth,
 	Holy,
+	Jesse,
 	Dark	
 }
 
