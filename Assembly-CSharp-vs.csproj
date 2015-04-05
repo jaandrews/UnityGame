@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\scripts\CameraMovement.cs" />
+     <Compile Include="Assets\scripts\Controllers\CombatController.cs" />
+     <Compile Include="Assets\scripts\Controllers\EnemyController.cs" />
+     <Compile Include="Assets\scripts\Controllers\MenuController.cs" />
+     <Compile Include="Assets\scripts\Controllers\PlayerController.cs" />
+     <Compile Include="Assets\scripts\Controllers\UnitController.cs" />
      <Compile Include="Assets\scripts\Equipment\Equipment.cs" />
      <Compile Include="Assets\scripts\HexPicker.cs" />
      <Compile Include="Assets\scripts\Items\Item.cs" />
@@ -62,10 +67,17 @@
      <Compile Include="Assets\scripts\Map\Stratum.cs" />
      <Compile Include="Assets\scripts\Map\TerrainDefinition.cs" />
      <Compile Include="Assets\scripts\Map\region_manager.cs" />
+     <Compile Include="Assets\scripts\Models\ActionMenuModel.cs" />
+     <Compile Include="Assets\scripts\Models\ActionModel.cs" />
+     <Compile Include="Assets\scripts\Models\CharacterModel.cs" />
+     <Compile Include="Assets\scripts\Models\DirectionModel.cs" />
+     <Compile Include="Assets\scripts\Models\TurnModel.cs" />
      <Compile Include="Assets\scripts\PatternDefinition.cs" />
      <Compile Include="Assets\scripts\TestDeleteMe.cs" />
      <Compile Include="Assets\scripts\actions\Action.cs" />
      <Compile Include="Assets\scripts\actions\ActionManager.cs" />
+     <Compile Include="Assets\scripts\actions\AttackAction.cs" />
+     <Compile Include="Assets\scripts\actions\MovementAction.cs" />
      <Compile Include="Assets\scripts\actions\Spell.cs" />
      <Compile Include="Assets\scripts\actions\effects\AddTerrainEffect.cs" />
      <Compile Include="Assets\scripts\actions\effects\DamageEffect.cs" />
