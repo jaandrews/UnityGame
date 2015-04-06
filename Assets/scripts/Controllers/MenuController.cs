@@ -21,7 +21,7 @@ public class MenuController : MonoBehaviour {
 	}
 
 	private void ClearOptions(object sender, UnitEventArgs e) {
-		if (_currentUnit.gameObject == e.unit.gameObject) {
+		if (e.unit != null && _currentUnit.gameObject == e.unit.gameObject) {
 			_currentUnit = null;
 			gameObject.SetActive(false);
 		}
