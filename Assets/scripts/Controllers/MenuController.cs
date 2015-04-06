@@ -1,27 +1,30 @@
 using UnityEngine;
 using System.Collections;
+using Events;
 
 public class MenuController : MonoBehaviour {
-	private GameObject _activeUnit;
-	private bool _dirty;
-
+	private GameObject _currentUnit;
 	// Use this for initialization
 	void Start () {
-		if (_activeUnit == null)
-			gameObject.SetActive(false);
-		_dirty = false;
+		UnitEvents.UnitSelected += new UnitSelectedEventHandler(UpdateOptions);
+		UnitEvents.UnitUnSelected += new UnitUnSelectedEventHandler(ClearOptions);
+		gameObject.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (_dirty);
-		if (_dirty)
-			gameObject.SetActive(_activeUnit != null);
 	}
 
-	public void SetActiveUnit(GameObject unit) {
-		_activeUnit = unit;
-		_dirty = true;
+	private void UpdateOptions(object sender, UnitEventArgs e) {
+		_currentUnit = e.unit;
+		gameObject.SetActive(true);
+	}
+
+	private void ClearOptions(object sender, UnitEventArgs e) {
+		if (_currentUnit.gameObject == e.unit.gameObject) {
+			_currentUnit = null;
+			gameObject.SetActive(false);
+		}
 	}
 }
 

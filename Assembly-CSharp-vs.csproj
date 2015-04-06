@@ -53,6 +53,9 @@
      <Compile Include="Assets\scripts\Controllers\PlayerController.cs" />
      <Compile Include="Assets\scripts\Controllers\UnitController.cs" />
      <Compile Include="Assets\scripts\Equipment\Equipment.cs" />
+     <Compile Include="Assets\scripts\Events\Data\UnitEventArgs.cs" />
+     <Compile Include="Assets\scripts\Events\IEvent.cs" />
+     <Compile Include="Assets\scripts\Events\UnitEvents.cs" />
      <Compile Include="Assets\scripts\HexPicker.cs" />
      <Compile Include="Assets\scripts\Items\Item.cs" />
      <Compile Include="Assets\scripts\Items\ItemDrop.cs" />
