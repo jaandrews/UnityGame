@@ -4,28 +4,26 @@ using System;
 
 namespace Events {
 	public delegate void UnitSelectedEventHandler(object sender, UnitEventArgs e);
-	public delegate void UnitUnSelectedEventHandler(object sender, UnitEventArgs e);
-	public class UnitEvents {
+	public delegate void UnitDeselectedEventHandler(object sender, UnitEventArgs e);
+	public delegate void UnitTargetedEventHandler(object sender, UnitEventArgs e);
+	public static class UnitEvents {
 		public static event UnitSelectedEventHandler UnitSelected;
-		public static event UnitUnSelectedEventHandler UnitUnSelected;
-		protected virtual void OnUnitSelected(UnitEventArgs e) {
-			if (UnitSelected != null) {
-				UnitSelected(this, e);
-			}
+		public static event UnitDeselectedEventHandler UnitDeselected;
+		public static event UnitTargetedEventHandler UnitTargeted;
+
+		public static void TriggerUnitSelected(GameObject unit) {
+			if (UnitSelected != null)
+				UnitSelected(null, new UnitEventArgs(unit));
 		}
 
-		protected virtual void OnUnitUnSelected(UnitEventArgs e) {
-			if (UnitUnSelected != null) {
-				UnitUnSelected(this, e);
-			}
+		public static void TriggerUnitDeselected(GameObject unit) {
+			if (UnitDeselected != null)
+				UnitDeselected(null, new UnitEventArgs(unit));
 		}
 
-		public void TriggerUnitSelected(GameObject unit) {
-			OnUnitSelected(new UnitEventArgs(unit));
-		}
-
-		public void TriggerUnitUnSelected(GameObject unit) {
-			OnUnitUnSelected(new UnitEventArgs(unit));
+		public static void TriggerUnitTargeted(GameObject unit) {
+			if (UnitTargeted != null)
+				UnitTargeted(null, new UnitEventArgs(unit));
 		}
 	}
 }

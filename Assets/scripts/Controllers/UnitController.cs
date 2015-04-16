@@ -1,29 +1,32 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using System.Collections;
 using Events;
 
 public abstract class UnitController : MonoBehaviour
 {
-	protected UnitEvents _unitEvents;
 	private bool _clear;
 
 	protected void Start() {
-		_unitEvents = new UnitEvents();
 		_clear = false;
 	}
 
 	protected void Update() {
-		if (_clear && Input.GetMouseButtonDown(0)) {
-			_unitEvents.TriggerUnitUnSelected(gameObject);
+		if (_clear && !EventSystem.current.IsPointerOverGameObject() && Input.GetMouseButtonDown(0)) {
+			UnitEvents.TriggerUnitDeselected(gameObject);
 			HandleOffClick();
 		}
+		if (!EventSystem.current.IsPointerOverGameObject() && Input.GetMouseButtonDown(1))
+			UnitEvents.TriggerUnitTargeted(gameObject);
 	}
 
 	void OnMouseOver() {
-		_clear = false;
-		if (Input.GetMouseButtonDown(0)) {
-			_unitEvents.TriggerUnitSelected(gameObject);
-			HandleOnClick();
+		if (!EventSystem.current.IsPointerOverGameObject()) {
+			_clear = false;
+			if (Input.GetMouseButtonDown(0)) {
+				UnitEvents.TriggerUnitSelected(gameObject);
+				HandleOnClick();
+			}
 		}
 	}
 

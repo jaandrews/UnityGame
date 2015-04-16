@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class CharacterModel : MonoBehaviour {
 	public int MaxHP;
@@ -11,4 +12,5 @@ public class CharacterModel : MonoBehaviour {
 	public GameObject Accessory1;
 	public GameObject Accessory2;
 	public bool Active;
+	public ActionModel[] Actions;
 }

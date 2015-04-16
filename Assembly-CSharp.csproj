@@ -1,112 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.20506</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <BaseDirectory>Assets</BaseDirectory>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{6287BEF0-7CF4-BF9F-814C-A803E2206BB8}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>True</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>False</Optimize>
-    <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_0_0;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <NoWarn>0169</NoWarn>
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_0;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>True</Optimize>
-    <OutputPath>Temp\bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <NoWarn>0169</NoWarn>
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml" />
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\scripts\CameraMovement.cs" />
-    <Compile Include="Assets\scripts\Controllers\CombatController.cs" />
-    <Compile Include="Assets\scripts\Controllers\EnemyController.cs" />
-    <Compile Include="Assets\scripts\Controllers\MenuController.cs" />
-    <Compile Include="Assets\scripts\Controllers\PlayerController.cs" />
-    <Compile Include="Assets\scripts\Controllers\UnitController.cs" />
-    <Compile Include="Assets\scripts\Equipment\Equipment.cs" />
-    <Compile Include="Assets\scripts\Events\Data\UnitEventArgs.cs" />
-    <Compile Include="Assets\scripts\Events\IEvent.cs" />
-    <Compile Include="Assets\scripts\Events\UnitEvents.cs" />
-    <Compile Include="Assets\scripts\HexPicker.cs" />
-    <Compile Include="Assets\scripts\Items\Item.cs" />
-    <Compile Include="Assets\scripts\Items\ItemDrop.cs" />
-    <Compile Include="Assets\scripts\Jobs\Job.cs" />
-    <Compile Include="Assets\scripts\Map\Boundary.cs" />
-    <Compile Include="Assets\scripts\Map\Coordinate.cs" />
-    <Compile Include="Assets\scripts\Map\Direction.cs" />
-    <Compile Include="Assets\scripts\Map\Hex.cs" />
-    <Compile Include="Assets\scripts\Map\Map.cs" />
-    <Compile Include="Assets\scripts\Map\Route.cs" />
-    <Compile Include="Assets\scripts\Map\SavedMap.cs" />
-    <Compile Include="Assets\scripts\Map\Stratum.cs" />
-    <Compile Include="Assets\scripts\Map\TerrainDefinition.cs" />
-    <Compile Include="Assets\scripts\Map\region_manager.cs" />
-    <Compile Include="Assets\scripts\Models\ActionMenuModel.cs" />
-    <Compile Include="Assets\scripts\Models\ActionModel.cs" />
-    <Compile Include="Assets\scripts\Models\CharacterModel.cs" />
-    <Compile Include="Assets\scripts\Models\DirectionModel.cs" />
-    <Compile Include="Assets\scripts\Models\TurnModel.cs" />
-    <Compile Include="Assets\scripts\PatternDefinition.cs" />
-    <Compile Include="Assets\scripts\TestDeleteMe.cs" />
-    <Compile Include="Assets\scripts\actions\Action.cs" />
-    <Compile Include="Assets\scripts\actions\ActionManager.cs" />
-    <Compile Include="Assets\scripts\actions\AttackAction.cs" />
-    <Compile Include="Assets\scripts\actions\MovementAction.cs" />
-    <Compile Include="Assets\scripts\actions\Spell.cs" />
-    <Compile Include="Assets\scripts\actions\effects\AddTerrainEffect.cs" />
-    <Compile Include="Assets\scripts\actions\effects\DamageEffect.cs" />
-    <Compile Include="Assets\scripts\actions\effects\Effect.cs" />
-    <Compile Include="Assets\scripts\actions\effects\EffectTree.cs" />
-    <Compile Include="Assets\scripts\actions\effects\PatternEffect.cs" />
-    <Compile Include="Assets\scripts\actions\effects\RemoveTerrainEffect.cs" />
-    <Compile Include="Assets\scripts\global_utils\AssetDataBase.cs" />
-    <Compile Include="Assets\scripts\global_utils\BezierCurve.cs" />
-    <Compile Include="Assets\scripts\global_utils\BezierCurveRenderer.cs" />
-    <Compile Include="Assets\scripts\global_utils\GlobalVariables.cs" />
-    <Compile Include="Assets\scripts\global_utils\Utilities.cs" />
-    <Compile Include="Assets\scripts\global_utils\misc_classes.cs" />
-    <Compile Include="Assets\scripts\placeables\Damage.cs" />
-    <Compile Include="Assets\scripts\placeables\Placeable.cs" />
-    <Compile Include="Assets\scripts\placeables\characters\Character.cs" />
-    <Compile Include="Assets\scripts\placeables\characters\CharacterSheet.cs" />
-    <Compile Include="Assets\scripts\placeables\characters\CharacterStats.cs" />
-    <Compile Include="Assets\scripts\placeables\characters\MonsterSheet.cs" />
-    <Compile Include="Assets\scripts\placeables\characters\PlayerSheet.cs" />
-    <Compile Include="Assets\scripts\strategy\Plan.cs" />
-    <Compile Include="Assets\scripts\strategy\Strategy.cs" />
-    <Compile Include="Assets\scripts\strategy\TargetDesignation.cs" />
-    <None Include="Assets\shaders\clip_shader.shader" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
-    </Reference>
+     <Compile Include="Assets\scripts\CameraMovement.cs" />
+     <Compile Include="Assets\scripts\Controllers\ActionMenuController.cs" />
+     <Compile Include="Assets\scripts\Controllers\CombatController.cs" />
+     <Compile Include="Assets\scripts\Controllers\EnemyController.cs" />
+     <Compile Include="Assets\scripts\Controllers\MenuController.cs" />
+     <Compile Include="Assets\scripts\Controllers\PlayerController.cs" />
+     <Compile Include="Assets\scripts\Controllers\UnitController.cs" />
+     <Compile Include="Assets\scripts\Equipment\Equipment.cs" />
+     <Compile Include="Assets\scripts\Events\Data\MenuEventArgs.cs" />
+     <Compile Include="Assets\scripts\Events\Data\UnitEventArgs.cs" />
+     <Compile Include="Assets\scripts\Events\MenuEvents.cs" />
+     <Compile Include="Assets\scripts\Events\UnitEvents.cs" />
+     <Compile Include="Assets\scripts\HexPicker.cs" />
+     <Compile Include="Assets\scripts\Items\Item.cs" />
+     <Compile Include="Assets\scripts\Items\ItemDrop.cs" />
+     <Compile Include="Assets\scripts\Jobs\Job.cs" />
+     <Compile Include="Assets\scripts\Map\Boundary.cs" />
+     <Compile Include="Assets\scripts\Map\Coordinate.cs" />
+     <Compile Include="Assets\scripts\Map\Direction.cs" />
+     <Compile Include="Assets\scripts\Map\Hex.cs" />
+     <Compile Include="Assets\scripts\Map\Map.cs" />
+     <Compile Include="Assets\scripts\Map\Route.cs" />
+     <Compile Include="Assets\scripts\Map\SavedMap.cs" />
+     <Compile Include="Assets\scripts\Map\Stratum.cs" />
+     <Compile Include="Assets\scripts\Map\TerrainDefinition.cs" />
+     <Compile Include="Assets\scripts\Map\region_manager.cs" />
+     <Compile Include="Assets\scripts\Models\ActionMenuModel.cs" />
+     <Compile Include="Assets\scripts\Models\ActionModel.cs" />
+     <Compile Include="Assets\scripts\Models\CharacterModel.cs" />
+     <Compile Include="Assets\scripts\Models\DirectionModel.cs" />
+     <Compile Include="Assets\scripts\Models\TurnModel.cs" />
+     <Compile Include="Assets\scripts\PatternDefinition.cs" />
+     <Compile Include="Assets\scripts\TestDeleteMe.cs" />
+     <Compile Include="Assets\scripts\actions\Action.cs" />
+     <Compile Include="Assets\scripts\actions\ActionGenerator.cs" />
+     <Compile Include="Assets\scripts\actions\ActionManager.cs" />
+     <Compile Include="Assets\scripts\actions\AttackAction.cs" />
+     <Compile Include="Assets\scripts\actions\IAction.cs" />
+     <Compile Include="Assets\scripts\actions\MovementAction.cs" />
+     <Compile Include="Assets\scripts\actions\Sequence.cs" />
+     <Compile Include="Assets\scripts\actions\Spell.cs" />
+     <Compile Include="Assets\scripts\actions\effects\AddTerrainEffect.cs" />
+     <Compile Include="Assets\scripts\actions\effects\DamageEffect.cs" />
+     <Compile Include="Assets\scripts\actions\effects\DealDamageEffect.cs" />
+     <Compile Include="Assets\scripts\actions\effects\Effect.cs" />
+     <Compile Include="Assets\scripts\actions\effects\EffectTree.cs" />
+     <Compile Include="Assets\scripts\actions\effects\PatternEffect.cs" />
+     <Compile Include="Assets\scripts\actions\effects\RemoveTerrainEffect.cs" />
+     <Compile Include="Assets\scripts\global_utils\AssetDataBase.cs" />
+     <Compile Include="Assets\scripts\global_utils\BezierCurve.cs" />
+     <Compile Include="Assets\scripts\global_utils\BezierCurveRenderer.cs" />
+     <Compile Include="Assets\scripts\global_utils\GlobalVariables.cs" />
+     <Compile Include="Assets\scripts\global_utils\Utilities.cs" />
+     <Compile Include="Assets\scripts\global_utils\misc_classes.cs" />
+     <Compile Include="Assets\scripts\placeables\Damage.cs" />
+     <Compile Include="Assets\scripts\placeables\Placeable.cs" />
+     <Compile Include="Assets\scripts\placeables\characters\Character.cs" />
+     <Compile Include="Assets\scripts\placeables\characters\CharacterSheet.cs" />
+     <Compile Include="Assets\scripts\placeables\characters\CharacterStats.cs" />
+     <Compile Include="Assets\scripts\placeables\characters\MonsterSheet.cs" />
+     <Compile Include="Assets\scripts\placeables\characters\PlayerSheet.cs" />
+     <Compile Include="Assets\scripts\strategy\Plan.cs" />
+     <Compile Include="Assets\scripts\strategy\Strategy.cs" />
+     <Compile Include="Assets\scripts\strategy\TargetDesignation.cs" />
+     <None Include="Assets\shaders\clip_shader.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -116,4 +123,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>
